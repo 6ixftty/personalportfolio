@@ -1,0 +1,220 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Verdana, Tahoma, sans-serif;
+	background: url(../images/annie-spratt-0ZPSX_mQ3xI-unsplash-editted.jpg);
+}
+
+a {
+	text-decoration: none;
+}
+.two-column-wrapper {
+	display: flex;
+	justify-content: space-evenly;
+	/* padding: 50px 120px; */
+}
+.hero-bg {
+	width: 100%;
+}
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 30px 100px;
+}
+
+nav ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+nav ul li a {
+	color: #1d1d24;
+	position: relative;
+	padding: 5px 0;
+}
+
+nav ul li a:hover {
+	color: #fd4766;
+}
+
+nav ul li a::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 3px;
+	background: #fd4766;
+	transition: 0.3s;
+	bottom: 0;
+}
+
+nav ul li a:hover::after {
+	width: 100%;
+}
+
+.button {
+	color: black;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 16px 40px;
+	border-radius: 500px;
+	display: inline-block;
+	font-weight: 500;
+	transition: all 0.4s ease-in-out;
+	background-size: 152% 100%;
+	background: #fd4766;
+	border: 2px solid #fd4766;
+}
+
+.button:hover {
+	background: transparent;
+	border-color: #fd4766;
+	color: #fd4766;
+}
+
+.content-wrapper {
+	position: absolute;
+	top: 25%;
+	left: 18%;
+	width: 70%;
+	/* padding: 120px 70px; */
+}
+
+.content-wrapper .title {
+	color: #1f1f25;
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	display: inline-block;
+	margin-bottom: 20px;
+	background: linear-gradient(
+		120deg,
+		#1c99fe 20.69%,
+		#7644ff 50.19%,
+		#fd4766 79.69%
+	);
+
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.content-wrapper h1 {
+	color: #1f1f25;
+	font-size: 60px;
+	font-weight: 900;
+	line-height: 90px;
+	text-transform: inherit;
+	width: 70%;
+}
+
+.content-wrapper h1 span {
+	color: #fd4766;
+}
+
+.content-wrapper p {
+	width: 55%;
+	color: #757575;
+	margin-top: 25px;
+	margin-bottom: 30px;
+}
+.image-wrapper {
+	position: absolute;
+	width: 20%;
+	top: 30%;
+	left: 68%;
+}
+
+.image-wrapper img {
+	width: 100%;
+}
+
+/*media queries*/
+
+@media (max-width: 900px) {
+	nav {
+		/* background-color: red; */
+		flex-direction: column;
+	}
+
+	.body {
+		flex-direction: column;
+	}
+	.two-column-wrapper {
+		flex-direction: column;
+		/* display: none; */
+	}
+	.image-wrapper {
+		display: none;
+	}
+
+	.content-wrapper {
+		position: absolute;
+		top: 38%;
+		left: 18%;
+		width: 70%;
+	}
+
+	footer {
+		display: none;
+	}
+}
+
+/* @media (max-width: 1300px) {
+	footer {
+		width: auto;
+		position: absolute;
+		top: 230px;
+	}
+}*/
+
+footer {
+	text-align: center;
+	padding: 3px;
+	background-color: #fd4766;
+	justify-content: center;
+
+	position: absolute;
+
+	margin-left: 220px;
+	margin-top: 39%;
+	margin-right: 0px;
+
+	color: black;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 16px 40px;
+	padding-right: 250px;
+	border-radius: 500px;
+	font-weight: 500;
+
+	background-size: 152% 50%;
+	background: #fd4766;
+	border: 2px solid #fd4766;
+}
+
+
+
+
+/*.footer {
+	flex-direction: column-reverse;
+	display: flex;
+	justify-content: left;
+	background-color: black;
+}
+
+.logos img {
+	width: 40px;
+}
+*/
+
+footer img{
+	width: 40px;
+}

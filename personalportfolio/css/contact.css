@@ -1,0 +1,233 @@
+body {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	background: url(../images/annie-spratt-0ZPSX_mQ3xI-unsplash-editted.jpg);
+	/* background-size: cover; */
+}
+
+a {
+	text-decoration: none;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 30px 100px;
+}
+
+nav ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+nav ul li a {
+	color: #1d1d24;
+	position: relative;
+	padding: 5px 0;
+}
+
+nav ul li a:hover {
+	color: #fd4766;
+}
+
+nav ul li a::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 3px;
+	background: #fd4766;
+	transition: 0.3s;
+	bottom: 0;
+}
+
+nav ul li a:hover::after {
+	width: 100%;
+}
+
+.button {
+	color: black;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 16px 40px;
+	border-radius: 500px;
+	display: inline-block;
+	font-weight: 500;
+	transition: all 0.4s ease-in-out;
+	background-size: 152% 100%;
+	background: #fd4766;
+	border: 2px solid #fd4766;
+}
+
+.button:hover {
+	background: transparent;
+	border-color: #fd4766;
+	color: #fd4766;
+}
+
+.contact {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+hr {
+	border-style: none;
+	width: 10%;
+	border-width: 5px;
+	border-top-style: dotted;
+	background-color: transparent;
+	border-color: black;
+}
+/*.contactheading {
+	 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+	text-align: center;
+}*/
+
+h3 {
+	/*color: black;
+	font-size: 70px;*/
+	color: #1f1f25;
+	text-align: center;
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	display: inline-block;
+	margin-bottom: 40px;
+	margin-left: 420px;
+	background: linear-gradient(
+		120deg,
+		#1c99fe 20.69%,
+		#7644ff 50.19%,
+		#fd4766 79.69%
+	);
+
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.contact-details p {
+	color: #757575;
+	text-transform: lowercase;
+	text-align: center;
+	font-style: italic;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+h1 {
+	color: #7644ff;
+	text-transform: uppercase;
+	text-align: center;
+	font-style: italic;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+}
+/* h2{ 
+	color: #7644ff;
+	position: absolute;
+	padding: 0 0 90px 0;
+	text-transform: uppercase;
+	text-align: center;
+	font-style: italic;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+}*/
+
+.contact-details span {
+	color: #fd4766;
+}
+
+.form {
+	position: relative;
+	/*top: 50%;
+	left: 50%; */
+	/* transform: translate(-50%, -50%); */
+	width: 350px;
+	height: 0px;
+	padding: 0px 40px;
+	box-sizing: border-box;
+	/* background: rgba(0, 0, 0, 0.5); */
+}
+
+input[type="text"],
+[type="email"] {
+	width: 100%;
+	border: none;
+	outline: none;
+	/* border-radius: 1px; */
+	border-bottom: 1px solid;
+	padding: 5px 15px;
+	margin: 5px 0;
+	box-sizing: border-box;
+	background: transparent;
+}
+
+textarea {
+	width: 100%;
+	border: none;
+	outline: none;
+	/* border-radius: 1px; */
+	border-bottom: 1px solid;
+	padding: 5px 15px;
+	margin: 5px 0;
+	box-sizing: border-box;
+	background: transparent;
+}
+
+.form input[type="submit"] {
+	color: black;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 16px 40px;
+	border-radius: 500px;
+	display: inline-block;
+	font-weight: 500;
+	transition: all 0.4s ease-in-out;
+	background-size: 152% 100%;
+	background: #fd4766;
+	border: 2px solid #fd4766;
+}
+
+.form input[type="submit"]:hover {
+	background: transparent;
+	border-color: #fd4766;
+	color: #fd4766;
+	cursor: pointer;
+}
+
+.vl {
+	border-left: 3px solid orangered;
+	height: 500px;
+	position: absolute;
+	left: 55%;
+	/* margin-left: -3px; */
+	top: 200px;
+}
+
+/*media queries*/
+
+@media (max-width: 900px) {
+	nav {
+		/* background-color: red; */
+		flex-direction: column;
+	}
+
+	h3 {
+		margin-left: 20px;
+		flex-direction: column;
+	}
+	.contact {
+		flex-direction: column;
+		/* display: none; */
+	}
+}
